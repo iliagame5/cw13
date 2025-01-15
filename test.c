@@ -1,4 +1,4 @@
 #include<stdio.h>
 int main(void){
-  printf("Hello World!");
+  printf("Boli mnie gyat i nie moge edge");
 }
