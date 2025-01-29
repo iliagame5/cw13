@@ -6,3 +6,6 @@ jobs:
         steps:
               - uses: actions/checkout@v4
               - run: gcc 10.5.c -lm
+              - run: sudo apt-get install gnuplot-nox
+              - run: gnuplot plot.gpi
+              - run: ls
