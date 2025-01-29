@@ -13,4 +13,4 @@ jobs:
               - run: pdflatex art.tex
               - uses: actions/upload-artifact@v4
                 with:
-                  path: plot.pdf
+                  path: art.pdf
