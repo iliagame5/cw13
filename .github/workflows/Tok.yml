@@ -5,4 +5,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
               - uses: actions/checkout@v4
-              - run: gcc 10.5.c
+              - run: gcc 10.5.c -lm
