@@ -13,7 +13,7 @@ jobs:
               - run: gnuplot plot.gpi
               - run: mkdir build
               - run: cd build
-              - run: cmake ..
+              - run: cmake 
               - run: ls
               - run: pdflatex art.tex
               - uses: actions/upload-artifact@v4
