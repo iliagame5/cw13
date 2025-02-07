@@ -16,10 +16,10 @@ int main(int argc, char*argv[]){
     assert(argc==5);
     double x_min=atof(argv[1]), x_max=atof(argv[2]), y_min=atof(argv[3]), y_max=atof(argv[4]);
 
-    for(int i=0; i<=64; i++)
-        for(int j=0; j<=64; j++){
-            double x=x_min+i*(x_max-x_min)/64.;
-            double y=y_min+j*(y_max-y_min)/64.;
+    for(int i=0; i<=256; i++)
+        for(int j=0; j<=256; j++){
+            double x=x_min+i*(x_max-x_min)/256.;
+            double y=y_min+j*(y_max-y_min)/256.;
             complex c=x+y*I;
             if(in_set(c,20))
                     printf("%g\t%g\n",x,y);
