@@ -1,6 +1,18 @@
 \documentclass{article}
 \usepackage{graphics,listings,xcolor}
+\usepackage[a4paper,margin=1cm]{geometry}
+\definecolor{bgcolor}{rgb}{0.9,0.95,1.0}
 \begin {document}
+    \lstset{
+        basicstyle=\ttfamily,
+        backgroundcolor=\color{bgcolor},
+        commentstyle=\color{green},
+        keywordstyle=\color{purple},
+        numberstyle=\tiny\color{blue},
+        stringstyle=\color{teal}
+        }
+    \section{Kod C}
     \lstinputlisting[language=C]{10.5.c}
+    \section{wykres}
     \includegraphics{plot.pdf}
 \end {document}
