@@ -12,7 +12,6 @@ jobs:
               - run: mkdir build
               - run: cd build
               - run: cmake
-              - run: make
               - run: ls
               - run: pdflatex art.tex
               - uses: actions/upload-artifact@v4
